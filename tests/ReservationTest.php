@@ -155,7 +155,7 @@ class ReservationTest extends PHPUnit_Extensions_SeleniumTestCase {
         'Beder-Malling',
       ),
       array(
-        'Title not available',
+        'Alt interiør : trendguide',
         '20. November 2016',
         'Beder-Malling',
       ),
