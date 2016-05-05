@@ -57,7 +57,7 @@ class ReservationTest extends PHPUnit_Extensions_SeleniumTestCase {
         '12846959',
       ), 
       array(
-        'Title not available',
+        'Alt interiør : trendguide',
         '2012, Januar, 1',
         '1',
         '24. May 2016',
