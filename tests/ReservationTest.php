@@ -37,16 +37,7 @@ class ReservationTest extends PHPUnit_Extensions_SeleniumTestCase {
 
     // Next section roughly checks the markup.
     // This relies on the dummy LMS service, so the data should be pre-defined.
-    $notready_for_pickup = array(
-      array(
-        'Alt om haven',
-        '2012, 15',
-        '1',
-        '7. September 2015',
-        'Hovedbiblioteket',
-        '11. March 2015',
-        '12846957',
-      ), 
+    $notready_for_pickup = array(       
       array(
         'Mad & venner',
         '2012, December, Nr. 092',
@@ -65,6 +56,15 @@ class ReservationTest extends PHPUnit_Extensions_SeleniumTestCase {
         '26. November 2015',
         '12846996',
       ),
+    array(
+        'Alt om haven',
+        '2012, 15',
+        '1',
+        '7. September 2015',
+        'Hovedbiblioteket',
+        '11. March 2015',
+        '12846957',
+      ), 
       array(
         'Hr. Peters blomster',
         '',

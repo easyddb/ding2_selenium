@@ -26,7 +26,7 @@ class OpenSuggestionTest extends PHPUnit_Extensions_SeleniumTestCase {
     // to be shown. Check simple query.
     $this->type('css=#edit-search-block-form--2', 'nors');
     $this->fireEvent('css=#edit-search-block-form--2', 'keyup');
-    $this->abstractedPage->waitForElement('css=#autocomplete');
+    sleep(5);
     // Check the first result from autocomplete.
     $this->abstractedPage->waitForElement('css=#autocomplete ul li:first');
     $this->assertElementContainsText('css=#autocomplete ul li:first', 'Norsk litteratur');
