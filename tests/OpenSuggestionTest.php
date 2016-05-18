@@ -24,12 +24,12 @@ class OpenSuggestionTest extends PHPUnit_Extensions_SeleniumTestCase {
     $this->open('/' . $this->config->getLocale());
     // Type something in search field and force autocomplete
     // to be shown. Check simple query.
-    $this->type('css=#edit-search-block-form--2', 'nors');
+    $this->type('css=#edit-search-block-form--2', 'nor');
     $this->fireEvent('css=#edit-search-block-form--2', 'keyup');
-    sleep(5);
+    $this->abstractedPage->waitForElement('css=#autocomplete');
     // Check the first result from autocomplete.
     $this->abstractedPage->waitForElement('css=#autocomplete ul li:first');
-    $this->assertElementContainsText('css=#autocomplete ul li:first', 'Norsk litteratur');
+    $this->assertElementContainsText('css=#autocomplete ul li:first', 'Norge');
     // Check utf8 characters.
     $this->type('css=#edit-search-block-form--2', 'gæk');
     $this->fireEvent('css=#edit-search-block-form--2', 'keyup');
